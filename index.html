@@ -1,90 +1,262 @@
-<!DOCTYPE html>
-<html lang="hi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>सनातन जन शक्ति पार्टी | SJSP Official</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&amp;family=Cinzel:wght@400;600;700;900&amp;family=Crimson+Pro:wght@300;400;600&amp;display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <style>
-      :root {
-        --sf: #ff6b00;
-        --dsf: #e55a00;
-        --gd: #d4a017;
-        --dgd: #a07812;
-        --cr: #fff8ee;
-        --dk: #1a0a00;
-        --lg: #fff0dc;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: "Crimson Pro", serif;
-        background: var(--cr);
-        color: var(--dk);
-        overflow-x: hidden;
-      }
-      nav {
-        background: linear-gradient(135deg, #1a0a00, #3d1500, #1a0a00);
-        position: sticky;
-        top: 0;
-        z-index: 9999;
-        box-shadow: 0 4px 20px rgba(255, 107, 0, 0.4);
-      }
-      .ni {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 8px 15px;
-        max-width: 1400px;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        gap: 6px;
-      }
-      .nl {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-      .nl img {
-        width: 42px;
-        height: 42px;
-        border-radius: 50%;
-        border: 2px solid var(--gd);
-      }
-      .nt {
-        color: var(--gd);
-        font-family: "Cinzel", serif;
-        font-size: 11px;
-        font-weight: 700;
-        line-height: 1.3;
-      }
-      .nt span {
-        display: block;
-        color: #ff9940;
-        font-size: 8px;
-        letter-spacing: 1px;
-      }
-      .nm {
-        display: flex;
-        gap: 3px;
-        list-style: none;
-        flex-wrap: wrap;
-      }
-      .nm a {
-        color: #ffd580;
-        text-decoration: none;
-        font-family: "Cinzel", serif;
-        font-size: 10px;
-        padding: 5px 7px;
-        border-radius: 4px;
+export default function SanatanWebsite() { const leaders = [ { name: 'Er. Ankit Pandey', role: 'Founder & Visionary Leader', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop', about: 'Dedicated to social welfare, youth empowerment, and development initiatives with a modern nationalist vision.', }, { name: 'Er. Rishabh Singh', role: 'Technical & Operations Head', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop', about: 'Focused on innovation, automation, and organizational management for impactful execution.', }, { name: 'Er. Suraj Mishra', role: 'Public Relations & Strategy', image: 'https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=800&auto=format&fit=crop', about: 'Committed to strengthening public outreach, cultural awareness, and community service programs.', }, ];
+
+return ( <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white text-gray-800"> {/* Hero Section */} <section className="relative overflow-hidden bg-gradient-to-r from-orange-600 via-red-500 to-yellow-500 text-white"> <div className="absolute inset-0 bg-black/20"></div>
+
+<div className="relative z-10 max-w-7xl mx-auto px-6 py-24 text-center">
+      <h1 className="text-5xl md:text-7xl font-extrabold leading-tight drop-shadow-lg">
+        सनातन धर्म संस्कृति सेवा ट्रस्ट
+      </h1>
+      <p className="mt-6 text-lg md:text-2xl max-w-4xl mx-auto text-orange-100">
+        राष्ट्र निर्माण • संस्कृति संरक्षण • समाज सेवा • युवा सशक्तिकरण
+      </p>
+
+      <div className="mt-10 flex flex-wrap justify-center gap-4">
+        <button className="bg-white text-orange-600 px-8 py-3 rounded-2xl font-bold shadow-xl hover:scale-105 transition">
+          Join Mission
+        </button>
+        <button className="border border-white px-8 py-3 rounded-2xl font-bold hover:bg-white hover:text-orange-600 transition">
+          Donate Now
+        </button>
+      </div>
+    </div>
+  </section>
+
+  {/* About Section */}
+  <section className="max-w-7xl mx-auto px-6 py-20">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 className="text-4xl font-bold text-orange-700 mb-6">
+          About Our Trust
+        </h2>
+        <p className="text-lg leading-8 text-gray-700">
+          सनातन धर्म संस्कृति सेवा ट्रस्ट का उद्देश्य भारतीय संस्कृति, सनातन मूल्यों,
+          शिक्षा, स्वास्थ्य, युवाओं के विकास तथा सामाजिक उत्थान के लिए कार्य करना है।
+          हमारा मिशन समाज में जागरूकता, राष्ट्रभक्ति और सेवा भावना को मजबूत करना है।
+        </p>
+      </div>
+
+      <div className="bg-white rounded-3xl shadow-2xl p-8 border border-orange-100">
+        <h3 className="text-3xl font-bold text-red-600 mb-6">Our Vision</h3>
+        <ul className="space-y-4 text-lg text-gray-700">
+          <li>✔ भारतीय संस्कृति और सनातन मूल्यों का संरक्षण</li>
+          <li>✔ युवाओं को शिक्षा और तकनीकी मार्गदर्शन</li>
+          <li>✔ गरीब एवं जरूरतमंद लोगों की सहायता</li>
+          <li>✔ राष्ट्रहित में सामाजिक जागरूकता अभियान</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {/* Manifesto Section */}
+  <section className="bg-orange-100 py-20">
+    <div className="max-w-7xl mx-auto px-6">
+      <div className="text-center mb-14">
+        <h2 className="text-5xl font-bold text-orange-700">Manifesto</h2>
+        <p className="mt-4 text-gray-700 text-lg">
+          Our Commitment Towards Nation & Society
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-8">
+        {[
+          {
+            title: 'Education & Skill Development',
+            desc: 'Providing educational support, technical training, and career guidance for youth empowerment.',
+          },
+          {
+            title: 'Cultural Preservation',
+            desc: 'Promoting Sanatan Dharma values, traditions, and Indian heritage across society.',
+          },
+          {
+            title: 'Social Welfare',
+            desc: 'Helping needy families through healthcare, food distribution, and awareness campaigns.',
+          },
+        ].map((item, i) => (
+          <div
+            key={i}
+            className="bg-white rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition"
+          >
+            <h3 className="text-2xl font-bold text-red-600 mb-4">
+              {item.title}
+            </h3>
+            <p className="text-gray-700 leading-7">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Leaders Section */}
+  <section className="max-w-7xl mx-auto px-6 py-20">
+    <div className="text-center mb-16">
+      <h2 className="text-5xl font-bold text-orange-700">Leadership Team</h2>
+      <p className="mt-4 text-lg text-gray-600">
+        Dedicated leaders working for social transformation.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-10">
+      {leaders.map((leader, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition duration-300"
+        >
+          <img
+            src={leader.image}
+            alt={leader.name}
+            className="w-full h-80 object-cover"
+          />
+
+          <div className="p-8">
+            <h3 className="text-3xl font-bold text-red-600">
+              {leader.name}
+            </h3>
+            <p className="text-orange-600 font-semibold mt-2">
+              {leader.role}
+            </p>
+            <p className="mt-4 text-gray-700 leading-7">
+              {leader.about}
+            </p>
+
+            <button className="mt-6 w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-2xl font-bold hover:opacity-90 transition">
+              View Full Profile
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* Donation & Membership Section */}
+  <section className="bg-gradient-to-r from-red-600 to-orange-500 py-20 text-white">
+    <div className="max-w-7xl mx-auto px-6 text-center">
+      <h2 className="text-5xl font-bold">Support Our Mission</h2>
+      <p className="mt-6 text-xl max-w-3xl mx-auto text-orange-100">
+        आपका सहयोग समाज सेवा, शिक्षा, संस्कृति संरक्षण और राष्ट्र निर्माण में महत्वपूर्ण योगदान देगा।
+      </p>
+
+      <div className="mt-10 flex flex-wrap justify-center gap-6">
+        <button className="bg-white text-red-600 px-10 py-4 rounded-2xl font-bold text-lg shadow-2xl hover:scale-105 transition">
+          Donate Online
+        </button>
+
+        <button className="border-2 border-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-white hover:text-red-600 transition">
+          Become a Member
+        </button>
+      </div>
+    </div>
+  </section>
+
+  {/* News & Updates Section */}
+  <section className="max-w-7xl mx-auto px-6 py-20">
+    <div className="text-center mb-14">
+      <h2 className="text-5xl font-bold text-orange-700">Latest News & Updates</h2>
+      <p className="mt-4 text-lg text-gray-600">
+        Activities, campaigns, and important announcements.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-8">
+      {[
+        {
+          title: 'Youth Empowerment Campaign',
+          desc: 'A new initiative launched to provide technical guidance and career support to youth.',
+        },
+        {
+          title: 'Cultural Awareness Program',
+          desc: 'Events organized for promoting Indian culture and Sanatan values in society.',
+        },
+        {
+          title: 'Social Service Drive',
+          desc: 'Food distribution and healthcare awareness camps conducted in rural areas.',
+        },
+      ].map((news, i) => (
+        <div
+          key={i}
+          className="bg-white rounded-3xl shadow-xl p-8 border border-orange-100 hover:-translate-y-2 transition"
+        >
+          <h3 className="text-2xl font-bold text-red-600 mb-4">
+            {news.title}
+          </h3>
+          <p className="text-gray-700 leading-7">{news.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* Social Media Section */}
+  <section className="bg-orange-100 py-16">
+    <div className="max-w-5xl mx-auto px-6 text-center">
+      <h2 className="text-4xl font-bold text-orange-700">
+        Follow Us On Social Media
+      </h2>
+
+      <div className="mt-10 flex flex-wrap justify-center gap-6">
+        <a href="#" className="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold shadow-lg hover:scale-105 transition">
+          Facebook
+        </a>
+        <a href="https://instagram.com/Sanatan_Janshakti_Party" target="_blank" className="bg-pink-600 text-white px-8 py-4 rounded-2xl font-bold shadow-lg hover:scale-105 transition">
+          Instagram - @Sanatan_Janshakti_Party
+        </a>
+        <a href="https://twitter.com/SJS_Party" target="_blank" className="bg-black text-white px-8 py-4 rounded-2xl font-bold shadow-lg hover:scale-105 transition">
+          X / Twitter - @SJS_Party
+        </a>
+        <a href="#" className="bg-red-600 text-white px-8 py-4 rounded-2xl font-bold shadow-lg hover:scale-105 transition">
+          YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* Contact Section */}}
+  <section className="bg-gray-900 text-white py-20">
+    <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+      <div>
+        <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
+        <p className="text-gray-300 leading-8 text-lg">
+          Join us in building a strong, cultured, and empowered society.
+        </p>
+
+        <div className="mt-8 space-y-4 text-lg text-gray-200">
+          <p>📍 Uttar Pradesh, India</p>
+          <p>📞 +91 XXXXX XXXXX</p>
+          <p>✉ info@sanatantrust.org</p>
+        </div>
+      </div>
+
+      <div className="bg-white/10 rounded-3xl p-8 backdrop-blur-lg border border-white/20">
+        <div className="space-y-5">
+          <input
+            type="text"
+            placeholder="Your Name"
+            className="w-full p-4 rounded-2xl bg-white/20 border border-white/20 outline-none"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            className="w-full p-4 rounded-2xl bg-white/20 border border-white/20 outline-none"
+          />
+          <textarea
+            rows="5"
+            placeholder="Your Message"
+            className="w-full p-4 rounded-2xl bg-white/20 border border-white/20 outline-none"
+          ></textarea>
+
+          <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 py-4 rounded-2xl font-bold text-lg hover:opacity-90 transition">
+            Send Message
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Footer */}
+  <footer className="bg-black text-gray-400 text-center py-6">
+    © 2026 Sanatan Dharma Sanskriti Seva Trust • All Rights Reserved
+  </footer>
+</div>
+
+); }        border-radius: 4px;
         cursor: pointer;
         transition: all 0.3s;
       }
